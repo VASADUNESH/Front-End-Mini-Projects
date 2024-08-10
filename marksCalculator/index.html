@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks review</title>
+    <link rel="stylesheet" href="/marksCalculator/style.css">
+    
+</head>
+<body>
+    <div >
+        <center>
+            <div >
+                <h1>Marks review</h1>
+                <div id="main">
+                <table>
+                    <tr><td>Roll number:</td><td><input type="text"></td></tr>
+                    <tr><td>Name: </td><td><input type="text"></td></tr>
+                    <tr  align="center"><td colspan="2">Marks</td></tr>
+                    <tr><td>HTML</td><td><input type="text" id="html"></td></tr>
+                    <tr><td>CSS</td><td><input type="text" id="css"></td></tr>
+                    <tr><td>Java script</td><td><input type="text"  id="js"></td></tr>
+                    <tr><td>Bootstrap</td><td><input type="text"  id="bs"></td></tr>
+                    <tr><td align="center" colspan="2"><button onclick="getResult()">Get Result</button></td></tr>
+                </table>
+                <div id="op">
+                    <output id="total"></output>
+                    <output id="average"></output>
+                    <output id="grade"></output>
+                </div>
+            </div>
+            </div>
+        </center>
+    </div>
+    <script src="/marksCalculator/script.js"></script>
+</body>
+</html>

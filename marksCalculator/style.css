@@ -1,0 +1,28 @@
+*{
+    color: yellow;
+}
+
+#main {
+    background-color: blue;
+    padding:20px;
+    width: 310px;
+    height: 300px;
+}
+
+h1{
+    color: blue;
+}
+button{
+    color: black;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+input{
+    outline: none;
+    color: black;
+}
+#op{
+    text-align: right;
+    margin-top: 20px;
+}
+
