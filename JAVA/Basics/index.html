@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java MCQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Java MCQs Quiz</h1>
+
+        <!-- MCQ 1 -->
+        <div class="question" id="question1">
+            <p>1. Who invented Java Programming?</p>
+            <input type="radio" name="q1" value="a"> a) Guido van Rossum<br>
+            <input type="radio" name="q1" value="b"> b) James Gosling<br>
+            <input type="radio" name="q1" value="c"> c) Dennis Ritchie<br>
+            <input type="radio" name="q1" value="d"> d) Bjarne Stroustrup<br>
+            <button onclick="checkAnswer(1, 'b', 'James Gosling is known as the creator of Java.')">Submit</button>
+            <p class="feedback" id="feedback1"></p>
+        </div>
+
+        <!-- MCQ 2 -->
+        <div class="question" id="question2">
+            <p>2. Which statement is true about Java?</p>
+            <input type="radio" name="q2" value="a"> a) Java is a sequence-dependent programming language<br>
+            <input type="radio" name="q2" value="b"> b) Java is a code dependent programming language<br>
+            <input type="radio" name="q2" value="c"> c) Java is a platform-dependent programming language<br>
+            <input type="radio" name="q2" value="d"> d) Java is a platform-independent programming language<br>
+            <button onclick="checkAnswer(2, 'd', 'Java is platform-independent because it uses bytecode that can run on any machine with a JVM.')">Submit</button>
+            <p class="feedback" id="feedback2"></p>
+        </div>
+
+        <!-- MCQ 3 -->
+<div class="question" id="question3">
+    <p>3. Which component is used to compile, debug and execute the Java programs?</p>
+    <input type="radio" name="q3" value="a"> a) JRE<br>
+    <input type="radio" name="q3" value="b"> b) JIT<br>
+    <input type="radio" name="q3" value="c"> c) JDK<br>
+    <input type="radio" name="q3" value="d"> d) JVM<br>
+    <button onclick="checkAnswer(3, 'c', 'JDK is the component used to compile, debug, and execute Java programs.')">Submit</button>
+    <p class="feedback" id="feedback3"></p>
+</div>
+
+<!-- MCQ 4 -->
+<div class="question" id="question4">
+    <p>4. What is the extension of java code files?</p>
+    <input type="radio" name="q4" value="a"> a) .js<br>
+    <input type="radio" name="q4" value="b"> b) .txt<br>
+    <input type="radio" name="q4" value="c"> c) .class<br>
+    <input type="radio" name="q4" value="d"> d) .java<br>
+    <button onclick="checkAnswer(4, 'd', 'Java code files have the .java extension.')">Submit</button>
+    <p class="feedback" id="feedback4"></p>
+</div>
+
+<!-- MCQ 5 -->
+<div class="question" id="question5">
+    <p>5. What is the extension of compiled java classes?</p>
+    <input type="radio" name="q5" value="a"> a) .txt<br>
+    <input type="radio" name="q5" value="b"> b) .js<br>
+    <input type="radio" name="q5" value="c"> c) .class<br>
+    <input type="radio" name="q5" value="d"> d) .java<br>
+    <button onclick="checkAnswer(5, 'c', 'Compiled Java classes have the .class extension.')">Submit</button>
+    <p class="feedback" id="feedback5"></p>
+</div>
+
+<!-- MCQ 6 -->
+<div class="question" id="question6">
+    <p>6. JDK stands for ____.</p>
+    <input type="radio" name="q6" value="a"> a) Java development kit<br>
+    <input type="radio" name="q6" value="b"> b) Java deployment kit<br>
+    <input type="radio" name="q6" value="c"> c) JavaScript deployment kit<br>
+    <input type="radio" name="q6" value="d"> d) None of these<br>
+    <button onclick="checkAnswer(6, 'a', 'JDK stands for Java Development Kit.')">Submit</button>
+    <p class="feedback" id="feedback6"></p>
+</div>
+
+<!-- MCQ 7 - Updated Question -->
+<div class="question" id="question7">
+    <p>7. Who is known as the father of computers?</p>
+    <input type="radio" name="q7" value="a"> a) Charles Babbage<br>
+    <input type="radio" name="q7" value="b"> b) Alan Turing<br>
+    <input type="radio" name="q7" value="c"> c) John von Neumann<br>
+    <input type="radio" name="q7" value="d"> d) Bill Gates<br>
+    <button onclick="checkAnswer(7, 'a', 'Charles Babbage is considered the father of computers for his design of the Analytical Engine.')">Submit</button>
+    <p class="feedback" id="feedback7"></p>
+</div>
+
+
+<!-- MCQ 8 -->
+<div class="question" id="question8">
+    <p>8. JRE stands for ___.</p>
+    <input type="radio" name="q8" value="a"> a) Java run ecosystem<br>
+    <input type="radio" name="q8" value="b"> b) JDK runtime Environment<br>
+    <input type="radio" name="q8" value="c"> c) Java Runtime Environment<br>
+    <input type="radio" name="q8" value="d"> d) None of these<br>
+    <button onclick="checkAnswer(8, 'c', 'JRE stands for Java Runtime Environment.')">Submit</button>
+    <p class="feedback" id="feedback8"></p>
+</div>
+
+<!-- MCQ 9 -->
+<div class="question" id="question9">
+    <p>9. Which class in Java is used to take input from the user?</p>
+    <input type="radio" name="q9" value="a"> a) Scanner<br>
+    <input type="radio" name="q9" value="b"> b) Input<br>
+    <input type="radio" name="q9" value="c"> c) Applier<br>
+    <input type="radio" name="q9" value="d"> d) None of these<br>
+    <button onclick="checkAnswer(9, 'a', 'Scanner is the class used to take input from the user.')">Submit</button>
+    <p class="feedback" id="feedback9"></p>
+</div>
+
+<!-- MCQ 10 -->
+<div class="question" id="question10">
+    <p>10. Every statement in Java language should end with a?</p>
+    <input type="radio" name="q10" value="a"> a) Dot or Period<br>
+    <input type="radio" name="q10" value="b"> b) Comma<br>
+    <input type="radio" name="q10" value="c"> c) Semicolon<br>
+    <input type="radio" name="q10" value="d"> d) Colon<br>
+    <button onclick="checkAnswer(10, 'c', 'Every statement in Java ends with a semicolon.')">Submit</button>
+    <p class="feedback" id="feedback10"></p>
+</div>
+
+<!-- MCQ 11 -->
+<div class="question" id="question11">
+    <p>11. What is the need to mention "static" before main method?</p>
+    <input type="radio" name="q11" value="a"> a) To call main method with creating an object of class<br>
+    <input type="radio" name="q11" value="b"> b) To make main method as class method common to all instances<br>
+    <input type="radio" name="q11" value="c"> c) Both A and B<br>
+    <input type="radio" name="q11" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(11, 'b', 'Static keyword makes the main method common to all instances.')">Submit</button>
+    <p class="feedback" id="feedback11"></p>
+</div>
+
+<!-- MCQ 12 -->
+<div class="question" id="question12">
+    <p>12. What is the use of Access modifier "public" in main( ) method?</p>
+    <input type="radio" name="q12" value="a"> a) To hide the main method from misuse<br>
+    <input type="radio" name="q12" value="b"> b) To call the main method outside of Class or Package by JVM<br>
+    <input type="radio" name="q12" value="c"> c) To protect main method<br>
+    <input type="radio" name="q12" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(12, 'b', 'Public access modifier allows JVM to call the main method outside of the class or package.')">Submit</button>
+    <p class="feedback" id="feedback12"></p>
+</div>
+
+<!-- MCQ 13 -->
+<div class="question" id="question13">
+    <p>13. Choose a Single Line Comment in Java Language below?</p>
+    <input type="radio" name="q13" value="a"> a) //Some comments<br>
+    <input type="radio" name="q13" value="b"> b) Some comments//<br>
+    <input type="radio" name="q13" value="c"> c) /*Some comments*/<br>
+    <input type="radio" name="q13" value="d"> d) */Some comments/*<br>
+    <button onclick="checkAnswer(13, 'a', 'Single line comments in Java use //.')">Submit</button>
+    <p class="feedback" id="feedback13"></p>
+</div>
+
+<!-- MCQ 14 -->
+<div class="question" id="question14">
+    <p>14. Which is the correct way to create an object in Java?</p>
+    <input type="radio" name="q14" value="a"> a) MyClass obj = new MyClass();<br>
+    <input type="radio" name="q14" value="b"> b) MyClass obj = MyClass();<br>
+    <input type="radio" name="q14" value="c"> c) MyClass obj();<br>
+    <input type="radio" name="q14" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(14, 'a', 'Correct way to create an object is MyClass obj = new MyClass();')">Submit</button>
+    <p class="feedback" id="feedback14"></p>
+</div>
+
+<!-- MCQ 15 -->
+<div class="question" id="question15">
+    <p>15. Which of the following is a valid constructor in Java?</p>
+    <input type="radio" name="q15" value="a"> a) class MyClass { MyClass() { } }<br>
+    <input type="radio" name="q15" value="b"> b) class MyClass { void MyClass() { } }<br>
+    <input type="radio" name="q15" value="c"> c) class MyClass { static MyClass() { } }<br>
+    <input type="radio" name="q15" value="d"> d) class MyClass { int MyClass() { } }<br>
+    <button onclick="checkAnswer(15, 'a', 'A valid constructor is MyClass() { } inside the class.')">Submit</button>
+    <p class="feedback" id="feedback15"></p>
+</div>
+
+<!-- MCQ 16 -->
+<div class="question" id="question16">
+    <p>16. Which method is used to start a thread in Java?</p>
+    <input type="radio" name="q16" value="a"> a) start()<br>
+    <input type="radio" name="q16" value="b"> b) run()<br>
+    <input type="radio" name="q16" value="c"> c) execute()<br>
+    <input type="radio" name="q16" value="d"> d) launch()<br>
+    <button onclick="checkAnswer(16, 'a', 'The start() method is used to start a thread in Java.')">Submit</button>
+    <p class="feedback" id="feedback16"></p>
+</div>
+
+<!-- MCQ 17 -->
+<div class="question" id="question17">
+    <p>17. In Java, Strings are ____.</p>
+    <input type="radio" name="q17" value="a"> a) Immutable<br>
+    <input type="radio" name="q17" value="b"> b) Mutable<br>
+    <input type="radio" name="q17" value="c"> c) Fixed<br>
+    <input type="radio" name="q17" value="d"> d) Dynamic<br>
+    <button onclick="checkAnswer(17, 'a', 'Strings in Java are immutable.')">Submit</button>
+    <p class="feedback" id="feedback17"></p>
+</div>
+
+<!-- MCQ 18 -->
+<div class="question" id="question18">
+    <p>18. Which keyword is used to define a constant in Java?</p>
+    <input type="radio" name="q18" value="a"> a) final<br>
+    <input type="radio" name="q18" value="b"> b) static<br>
+    <input type="radio" name="q18" value="c"> c) const<br>
+    <input type="radio" name="q18" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(18, 'a', 'The keyword final is used to define a constant in Java.')">Submit</button>
+    <p class="feedback" id="feedback18"></p>
+</div>
+
+<!-- MCQ 19 -->
+<div class="question" id="question19">
+    <p>19. What is the size of int data type in Java?</p>
+    <input type="radio" name="q19" value="a"> a) 4 bytes<br>
+    <input type="radio" name="q19" value="b"> b) 2 bytes<br>
+    <input type="radio" name="q19" value="c"> c) 8 bytes<br>
+    <input type="radio" name="q19" value="d"> d) None of these<br>
+    <button onclick="checkAnswer(19, 'a', 'The size of int data type is 4 bytes in Java.')">Submit</button>
+    <p class="feedback" id="feedback19"></p>
+</div>
+
+<!-- MCQ 20 -->
+<div class="question" id="question20">
+    <p>20. Which keyword is used to inherit a class in Java?</p>
+    <input type="radio" name="q20" value="a"> a) extend<br>
+    <input type="radio" name="q20" value="b"> b) inherit<br>
+    <input type="radio" name="q20" value="c"> c) extends<br>
+    <input type="radio" name="q20" value="d"> d) implements<br>
+    <button onclick="checkAnswer(20, 'c', 'The keyword extends is used to inherit a class in Java.')">Submit</button>
+    <p class="feedback" id="feedback20"></p>
+</div>
+
+<!-- MCQ 21 -->
+<div class="question" id="question21">
+    <p>21. What does the 'super' keyword do in Java?</p>
+    <input type="radio" name="q21" value="a"> a) Calls the parent class constructor<br>
+    <input type="radio" name="q21" value="b"> b) Calls the current class constructor<br>
+    <input type="radio" name="q21" value="c"> c) Terminates a function<br>
+    <input type="radio" name="q21" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(21, 'a', 'The super keyword is used to call the parent class constructor.')">Submit</button>
+    <p class="feedback" id="feedback21"></p>
+</div>
+
+<!-- MCQ 22 -->
+<div class="question" id="question22">
+    <p>22. Which of the following is not a primitive data type in Java?</p>
+    <input type="radio" name="q22" value="a"> a) int<br>
+    <input type="radio" name="q22" value="b"> b) byte<br>
+    <input type="radio" name="q22" value="c"> c) String<br>
+    <input type="radio" name="q22" value="d"> d) char<br>
+    <button onclick="checkAnswer(22, 'c', 'String is not a primitive data type in Java.')">Submit</button>
+    <p class="feedback" id="feedback22"></p>
+</div>
+
+<!-- MCQ 23 -->
+<div class="question" id="question23">
+    <p>23. Which operator is used to allocate memory for an object in Java?</p>
+    <input type="radio" name="q23" value="a"> a) malloc<br>
+    <input type="radio" name="q23" value="b"> b) alloc<br>
+    <input type="radio" name="q23" value="c"> c) new<br>
+    <input type="radio" name="q23" value="d"> d) create<br>
+    <button onclick="checkAnswer(23, 'c', 'The new operator is used to allocate memory for an object in Java.')">Submit</button>
+    <p class="feedback" id="feedback23"></p>
+</div>
+
+<!-- MCQ 24 -->
+<div class="question" id="question24">
+    <p>24. Which of the following is true about Java?</p>
+    <input type="radio" name="q24" value="a"> a) Java is platform-independent<br>
+    <input type="radio" name="q24" value="b"> b) Java supports multiple inheritance<br>
+    <input type="radio" name="q24" value="c"> c) Java uses pointers<br>
+    <input type="radio" name="q24" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(24, 'a', 'Java is platform-independent through the use of the Java Virtual Machine (JVM).')">Submit</button>
+    <p class="feedback" id="feedback24"></p>
+</div>
+
+<!-- MCQ 25 -->
+<div class="question" id="question25">
+    <p>25. Which method in Java is used to read input from the user?</p>
+    <input type="radio" name="q25" value="a"> a) scanf()<br>
+    <input type="radio" name="q25" value="b"> b) cin<br>
+    <input type="radio" name="q25" value="c"> c) nextLine()<br>
+    <input type="radio" name="q25" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(25, 'c', 'The nextLine() method is used to read input from the user in Java.')">Submit</button>
+    <p class="feedback" id="feedback25"></p>
+</div>
+
+<!-- MCQ 26 -->
+<div class="question" id="question26">
+    <p>26. In Java, what is the return type of the hashCode() method?</p>
+    <input type="radio" name="q26" value="a"> a) int<br>
+    <input type="radio" name="q26" value="b"> b) long<br>
+    <input type="radio" name="q26" value="c"> c) String<br>
+    <input type="radio" name="q26" value="d"> d) boolean<br>
+    <button onclick="checkAnswer(26, 'a', 'The return type of the hashCode() method in Java is int.')">Submit</button>
+    <p class="feedback" id="feedback26"></p>
+</div>
+
+<!-- MCQ 27 -->
+<div class="question" id="question27">
+    <p>27. Which of the following is used for string comparison in Java?</p>
+    <input type="radio" name="q27" value="a"> a) ==<br>
+    <input type="radio" name="q27" value="b"> b) equals()<br>
+    <input type="radio" name="q27" value="c"> c) compare()<br>
+    <input type="radio" name="q27" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(27, 'b', 'The equals() method is used for string comparison in Java.')">Submit</button>
+    <p class="feedback" id="feedback27"></p>
+</div>
+
+<!-- MCQ 28 -->
+<div class="question" id="question28">
+    <p>28. In Java, how many bits are used to represent a char value?</p>
+    <input type="radio" name="q28" value="a"> a) 8<br>
+    <input type="radio" name="q28" value="b"> b) 16<br>
+    <input type="radio" name="q28" value="c"> c) 32<br>
+    <input type="radio" name="q28" value="d"> d) 64<br>
+    <button onclick="checkAnswer(28, 'b', 'In Java, 16 bits are used to represent a char value.')">Submit</button>
+    <p class="feedback" id="feedback28"></p>
+</div>
+
+<!-- MCQ 29 -->
+<div class="question" id="question29">
+    <p>29. Which method must be implemented by a Java class that implements Runnable?</p>
+    <input type="radio" name="q29" value="a"> a) run()<br>
+    <input type="radio" name="q29" value="b"> b) start()<br>
+    <input type="radio" name="q29" value="c"> c) execute()<br>
+    <input type="radio" name="q29" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(29, 'a', 'The run() method must be implemented by a class that implements Runnable.')">Submit</button>
+    <p class="feedback" id="feedback29"></p>
+</div>
+
+<!-- MCQ 30 -->
+<div class="question" id="question30">
+    <p>30. Which of the following is a method of the Thread class in Java?</p>
+    <input type="radio" name="q30" value="a"> a) run()<br>
+    <input type="radio" name="q30" value="b"> b) sleep()<br>
+    <input type="radio" name="q30" value="c"> c) join()<br>
+    <input type="radio" name="q30" value="d"> d) All of the above<br>
+    <button onclick="checkAnswer(30, 'd', 'All of the methods run(), sleep(), and join() are part of the Thread class in Java.')">Submit</button>
+    <p class="feedback" id="feedback30"></p>
+</div>
+
+<!-- MCQ 31 -->
+<div class="question" id="question31">
+    <p>31. Which of the following is not an access modifier in Java?</p>
+    <input type="radio" name="q31" value="a"> a) private<br>
+    <input type="radio" name="q31" value="b"> b) public<br>
+    <input type="radio" name="q31" value="c"> c) protected<br>
+    <input type="radio" name="q31" value="d"> d) static<br>
+    <button onclick="checkAnswer(31, 'd', 'Static is not an access modifier in Java.')">Submit</button>
+    <p class="feedback" id="feedback31"></p>
+</div>
+
+<!-- MCQ 32 -->
+<div class="question" id="question32">
+    <p>32. What is the size of an int data type in Java?</p>
+    <input type="radio" name="q32" value="a"> a) 8 bits<br>
+    <input type="radio" name="q32" value="b"> b) 16 bits<br>
+    <input type="radio" name="q32" value="c"> c) 32 bits<br>
+    <input type="radio" name="q32" value="d"> d) 64 bits<br>
+    <button onclick="checkAnswer(32, 'c', 'The size of an int in Java is 32 bits.')">Submit</button>
+    <p class="feedback" id="feedback32"></p>
+</div>
+
+<!-- MCQ 33 -->
+<div class="question" id="question33">
+    <p>33. Which keyword is used to inherit a class in Java?</p>
+    <input type="radio" name="q33" value="a"> a) extend<br>
+    <input type="radio" name="q33" value="b"> b) extends<br>
+    <input type="radio" name="q33" value="c"> c) inherit<br>
+    <input type="radio" name="q33" value="d"> d) implements<br>
+    <button onclick="checkAnswer(33, 'b', 'The extends keyword is used to inherit a class in Java.')">Submit</button>
+    <p class="feedback" id="feedback33"></p>
+</div>
+
+<!-- MCQ 34 -->
+<div class="question" id="question34">
+    <p>34. Which method is used to stop a thread in Java?</p>
+    <input type="radio" name="q34" value="a"> a) stop()<br>
+    <input type="radio" name="q34" value="b"> b) suspend()<br>
+    <input type="radio" name="q34" value="c"> c) terminate()<br>
+    <input type="radio" name="q34" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(34, 'd', 'stop() and suspend() are deprecated, so there is no dedicated method to stop a thread.')">Submit</button>
+    <p class="feedback" id="feedback34"></p>
+</div>
+
+<!-- MCQ 35 -->
+<div class="question" id="question35">
+    <p>35. Which of the following is used to handle exceptions in Java?</p>
+    <input type="radio" name="q35" value="a"> a) try-catch<br>
+    <input type="radio" name="q35" value="b"> b) if-else<br>
+    <input type="radio" name="q35" value="c"> c) for loop<br>
+    <input type="radio" name="q35" value="d"> d) switch<br>
+    <button onclick="checkAnswer(35, 'a', 'The try-catch block is used to handle exceptions in Java.')">Submit</button>
+    <p class="feedback" id="feedback35"></p>
+</div>
+
+<!-- MCQ 36 -->
+<div class="question" id="question36">
+    <p>36. Which keyword is used to define a constant in Java?</p>
+    <input type="radio" name="q36" value="a"> a) constant<br>
+    <input type="radio" name="q36" value="b"> b) final<br>
+    <input type="radio" name="q36" value="c"> c) const<br>
+    <input type="radio" name="q36" value="d"> d) static<br>
+    <button onclick="checkAnswer(36, 'b', 'The final keyword is used to define a constant in Java.')">Submit</button>
+    <p class="feedback" id="feedback36"></p>
+</div>
+
+<!-- MCQ 37 -->
+<div class="question" id="question37">
+    <p>37. What is the purpose of the main method in Java?</p>
+    <input type="radio" name="q37" value="a"> a) To define the entry point of a Java application<br>
+    <input type="radio" name="q37" value="b"> b) To create objects<br>
+    <input type="radio" name="q37" value="c"> c) To print output<br>
+    <input type="radio" name="q37" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(37, 'a', 'The main method defines the entry point of a Java application.')">Submit</button>
+    <p class="feedback" id="feedback37"></p>
+</div>
+
+<!-- MCQ 38 -->
+<div class="question" id="question38">
+    <p>38. Which of the following is a reserved keyword in Java?</p>
+    <input type="radio" name="q38" value="a"> a) goto<br>
+    <input type="radio" name="q38" value="b"> b) implements<br>
+    <input type="radio" name="q38" value="c"> c) default<br>
+    <input type="radio" name="q38" value="d"> d) All of the above<br>
+    <button onclick="checkAnswer(38, 'd', 'All of the options are reserved keywords in Java.')">Submit</button>
+    <p class="feedback" id="feedback38"></p>
+</div>
+
+<!-- MCQ 39 -->
+<div class="question" id="question39">
+    <p>39. In Java, which of the following are valid types of exception handling?</p>
+    <input type="radio" name="q39" value="a"> a) Checked<br>
+    <input type="radio" name="q39" value="b"> b) Unchecked<br>
+    <input type="radio" name="q39" value="c"> c) Both a and b<br>
+    <input type="radio" name="q39" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(39, 'c', 'Both checked and unchecked are valid types of exception handling in Java.')">Submit</button>
+    <p class="feedback" id="feedback39"></p>
+</div>
+
+<!-- MCQ 40 -->
+<div class="question" id="question40">
+    <p>40. Which of the following collections guarantees no duplicates?</p>
+    <input type="radio" name="q40" value="a"> a) List<br>
+    <input type="radio" name="q40" value="b"> b) Set<br>
+    <input type="radio" name="q40" value="c"> c) Queue<br>
+    <input type="radio" name="q40" value="d"> d) Map<br>
+    <button onclick="checkAnswer(40, 'b', 'Set guarantees no duplicates.')">Submit</button>
+    <p class="feedback" id="feedback40"></p>
+</div>
+
+<!-- MCQ 41 -->
+<div class="question" id="question41">
+    <p>41. Which method is used to start a thread in Java?</p>
+    <input type="radio" name="q41" value="a"> a) run()<br>
+    <input type="radio" name="q41" value="b"> b) start()<br>
+    <input type="radio" name="q41" value="c"> c) init()<br>
+    <input type="radio" name="q41" value="d"> d) execute()<br>
+    <button onclick="checkAnswer(41, 'b', 'The start() method is used to begin the execution of a thread.')">Submit</button>
+    <p class="feedback" id="feedback41"></p>
+</div>
+
+<!-- MCQ 42 -->
+<div class="question" id="question42">
+    <p>42. What is JIT in Java?</p>
+    <input type="radio" name="q42" value="a"> a) Java In Timer<br>
+    <input type="radio" name="q42" value="b"> b) Java In Time Thread<br>
+    <input type="radio" name="q42" value="c"> c) Just In Time Compiler<br>
+    <input type="radio" name="q42" value="d"> d) Just In Time Runnable<br>
+    <button onclick="checkAnswer(42, 'c', 'JIT stands for Just In Time Compiler, which optimizes bytecode execution.')">Submit</button>
+    <p class="feedback" id="feedback42"></p>
+</div>
+
+<!-- MCQ 43 -->
+<div class="question" id="question43">
+    <p>43. Which package contains the Random class in Java?</p>
+    <input type="radio" name="q43" value="a"> a) java.util<br>
+    <input type="radio" name="q43" value="b"> b) java.lang<br>
+    <input type="radio" name="q43" value="c"> c) java.io<br>
+    <input type="radio" name="q43" value="d"> d) java.math<br>
+    <button onclick="checkAnswer(43, 'a', 'The Random class is part of the java.util package.')">Submit</button>
+    <p class="feedback" id="feedback43"></p>
+</div>
+
+<!-- MCQ 44 -->
+<div class="question" id="question44">
+    <p>44. Which method is used to compare two strings in Java?</p>
+    <input type="radio" name="q44" value="a"> a) equals()<br>
+    <input type="radio" name="q44" value="b"> b) compareTo()<br>
+    <input type="radio" name="q44" value="c"> c) ==<br>
+    <input type="radio" name="q44" value="d"> d) equalsIgnoreCase()<br>
+    <button onclick="checkAnswer(44, 'a', 'The equals() method is used to compare two strings in Java.')">Submit</button>
+    <p class="feedback" id="feedback44"></p>
+</div>
+
+<!-- MCQ 45 -->
+<div class="question" id="question45">
+    <p>45. Which of the following is not a primitive data type in Java?</p>
+    <input type="radio" name="q45" value="a"> a) int<br>
+    <input type="radio" name="q45" value="b"> b) byte<br>
+    <input type="radio" name="q45" value="c"> c) String<br>
+    <input type="radio" name="q45" value="d"> d) char<br>
+    <button onclick="checkAnswer(45, 'c', 'String is not a primitive data type in Java.')">Submit</button>
+    <p class="feedback" id="feedback45"></p>
+</div>
+
+<!-- MCQ 46 -->
+<div class="question" id="question46">
+    <p>46. What is the default value of a boolean variable in Java?</p>
+    <input type="radio" name="q46" value="a"> a) true<br>
+    <input type="radio" name="q46" value="b"> b) false<br>
+    <input type="radio" name="q46" value="c"> c) 0<br>
+    <input type="radio" name="q46" value="d"> d) null<br>
+    <button onclick="checkAnswer(46, 'b', 'The default value of a boolean variable in Java is false.')">Submit</button>
+    <p class="feedback" id="feedback46"></p>
+</div>
+
+
+<!-- MCQ 47 -->
+<div class="question" id="question47">
+    <p>47. Which of the following best describes polymorphism in Java?</p>
+    <input type="radio" name="q47" value="a"> a) Ability of a method to perform different tasks based on the object that it is acting upon<br>
+    <input type="radio" name="q47" value="b"> b) Ability to inherit properties from another class<br>
+    <input type="radio" name="q47" value="c"> c) Ability to change the value of a variable<br>
+    <input type="radio" name="q47" value="d"> d) None of the above<br>
+    <button onclick="checkAnswer(47, 'a', 'Polymorphism refers to the ability of a method to perform different tasks based on the object it is acting upon.')">Submit</button>
+    <p class="feedback" id="feedback47"></p>
+</div>
+
+
+<!-- MCQ 48 -->
+<div class="question" id="question48">
+    <p>48. Which of the following is a marker interface in Java?</p>
+    <input type="radio" name="q48" value="a"> a) Runnable<br>
+    <input type="radio" name="q48" value="b"> b) Serializable<br>
+    <input type="radio" name="q48" value="c"> c) Cloneable<br>
+    <input type="radio" name="q48" value="d"> d) All of the above<br>
+    <button onclick="checkAnswer(48, 'd', 'Runnable, Serializable, and Cloneable are all marker interfaces in Java.')">Submit</button>
+    <p class="feedback" id="feedback48"></p>
+</div>
+
+
+<!-- MCQ 49 -->
+<div class="question" id="question49">
+    <p>49. Choose a correct version of Java Documentation Comment?</p>
+    <input type="radio" name="q49" value="a"> a) /* comments */<br>
+    <input type="radio" name="q49" value="b"> b) /** comments */<br>
+    <input type="radio" name="q49" value="c"> c) /* comments **/<br>
+    <input type="radio" name="q49" value="d"> d) /** comments **/<br>
+    <button onclick="checkAnswer(49, 'b', 'The correct Java documentation comment format is /** comments */.')">Submit</button>
+    <p class="feedback" id="feedback49"></p>
+</div>
+
+<!-- MCQ 50 -->
+<div class="question" id="question50">
+    <p>50. Which among the following is not a Data Type in Java?</p>
+    <input type="radio" name="q50" value="a"> a) short<br>
+    <input type="radio" name="q50" value="b"> b) int<br>
+    <input type="radio" name="q50" value="c"> c) long double<br>
+    <input type="radio" name="q50" value="d"> d) double<br>
+    <button onclick="checkAnswer(50, 'c', 'long double is not a data type in Java.')">Submit</button>
+    <p class="feedback" id="feedback50"></p>
+</div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
